@@ -11,7 +11,9 @@ How to do it:
 3. WIN+CTRL+LSHIFT+N
 4. Tada! Now you have a quote.
 
-[Download Link](https://github.com/Juicysteak117/NarratorQuoter/releases/download/v1.0/NarratorQuoter.exe)
+If you choose to use WIN+LSHIFT+N instead, resolve will be tested instead of a random quote.
+
+[Download Link](https://github.com/Juicysteak117/NarratorQuoter/releases/download/v2.0/NarratorQuoter.exe)
 
 You might be wondering "Why is it such a wonky hotkey?" to which I say that you it nearly guarantees that you won't accidentally do it not will there ever be any overlap with any other programs. It's not too bad once you get the hang of it, just the corner keys and N, assuming you have a standard QWERTY keyboard. Sorry to the rest of you!
 
