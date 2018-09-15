@@ -1,34 +1,15 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
 #NoTrayIcon
 
-^<+#N::
-Random, TheNumber, 0, 200
+; This script is disgusting and I'm sorry. It's one of the first things I ever wrote.
 
-ifEqual TheNumber, 0, Send, **Affliction** - *The human mind - fragile like a robin's egg.*{Enter}
-ifEqual TheNumber, 1, Send, **Affliction** - *Wherefore, heroism?*{Enter}
-ifEqual TheNumber, 2, Send, **Affliction** - *The mind cannot hope to withstand such an assult.*{Enter}
-ifEqual TheNumber, 3, Send, **Affliction** - *Even the aged oak will fall to the tempest's winds.*{Enter}
-ifEqual TheNumber, 4, Send, **Affliction** - *Madness, our old friend{!}*{Enter}
-ifEqual TheNumber, 5, Send, **Affliction** - *One can sometimes find clarity in madness, but only rarely...*{Enter}
-ifEqual TheNumber, 6, Send, **Affliction** - *Madness - sublimity of the intelligence, or so it has been said.*{Enter}
-ifEqual TheNumber, 7, Send, **Affliction** - *The bulwarks of the mind have fallen{!}*{Enter}
-ifEqual TheNumber, 8, Send, **Affliction** - *The abyss is made manifest{!}*{Enter}
-ifEqual TheNumber, 9, Send, **Abusive** - *Frustration and fury, more destructive than a hundred cannons.*{Enter}
-ifEqual TheNumber, 10, Send, **Hopeless** - *There can be no hope in this hell, no hope at all.*{Enter}
-ifEqual TheNumber, 11, Send, **Fearful** - *Fear and frailty finally claim their due.*{Enter}
-ifEqual TheNumber, 12, Send, **Irrational** - *Reeling, gasping, taken over the edge into madness{!}*{Enter}
-ifEqual TheNumber, 13, Send, **Masochistic** - *Those who covet injury find it in no short supply.*{Enter}
-ifEqual TheNumber, 14, Send, **Paranoid** - *The walls close in, the shadows whisper of conspiracy{!}*{Enter}
-ifEqual TheNumber, 15, Send, **Selfish** - *Self-preservation is paramount - at any cost{!}*{Enter}
-ifEqual TheNumber, 16, Send, **Courageous** - *A moment of valor shines brightest against a backdrop of despair.*{Enter}
-ifEqual TheNumber, 17, Send, **Focused** - *A moment of clarity in the eye of the storm..*{Enter}
-ifEqual TheNumber, 18, Send, **Powerful** - *Anger is power - unleash it{!}
-ifEqual TheNumber, 19, Send, **Stalwart** - *Many fall in the face of chaos; but not this one, not today.*{Enter}
-ifEqual TheNumber, 20, Send, **Vigorous** - *Adversity can foster hope, and resilience.*{Enter}
+^<+#N::
+Random, TheNumber, 21, 200
+
 ifEqual TheNumber, 21, Send, *Survival is a tenuous proposition in this sprawling tomb.*{Enter}
 ifEqual TheNumber, 22, Send, *More blood soaks the soil, feeding the evil therein.*{Enter}
 ifEqual TheNumber, 23, Send, *Another life wasted in the pursuit of glory and gold.*{Enter}
@@ -209,6 +190,39 @@ ifEqual TheNumber, 197, Send, *Slumped shoulders, wild eyes, and a stumbling gai
 ifEqual TheNumber, 198, Send, *Fan the flames{!} Mold the metal{!} We are raising an army.*{Enter}
 ifEqual TheNumber, 199, Send, *A man in a robe, claiming communion with the divine. Madness.*{Enter}
 ifEqual TheNumber, 200, Send, *More arrive, foolishly seeking fortune and glory in this domain of the damned.*{Enter}
+Random, QuoterNewSeed, 1, 2147483647
+Random, , %QuoterNewSeed%
+Sleep, 1000
+return
 
-TheNumber =
+<+#N::
+Send, *Resolve is tested...*{Enter}
+Sleep, 1000
+; Again, this is really gross sorry but I don't want to re-write it.
+Random, TheNumber, 0, 20
+
+ifEqual TheNumber, 0, Send, **Affliction** - *The human mind - fragile like a robin's egg.*{Enter}
+ifEqual TheNumber, 1, Send, **Affliction** - *Wherefore, heroism?*{Enter}
+ifEqual TheNumber, 2, Send, **Affliction** - *The mind cannot hope to withstand such an assult.*{Enter}
+ifEqual TheNumber, 3, Send, **Affliction** - *Even the aged oak will fall to the tempest's winds.*{Enter}
+ifEqual TheNumber, 4, Send, **Affliction** - *Madness, our old friend{!}*{Enter}
+ifEqual TheNumber, 5, Send, **Affliction** - *One can sometimes find clarity in madness, but only rarely...*{Enter}
+ifEqual TheNumber, 6, Send, **Affliction** - *Madness - sublimity of the intelligence, or so it has been said.*{Enter}
+ifEqual TheNumber, 7, Send, **Affliction** - *The bulwarks of the mind have fallen{!}*{Enter}
+ifEqual TheNumber, 8, Send, **Affliction** - *The abyss is made manifest{!}*{Enter}
+ifEqual TheNumber, 9, Send, **Abusive** - *Frustration and fury, more destructive than a hundred cannons.*{Enter}
+ifEqual TheNumber, 10, Send, **Hopeless** - *There can be no hope in this hell, no hope at all.*{Enter}
+ifEqual TheNumber, 11, Send, **Fearful** - *Fear and frailty finally claim their due.*{Enter}
+ifEqual TheNumber, 12, Send, **Irrational** - *Reeling, gasping, taken over the edge into madness{!}*{Enter}
+ifEqual TheNumber, 13, Send, **Masochistic** - *Those who covet injury find it in no short supply.*{Enter}
+ifEqual TheNumber, 14, Send, **Paranoid** - *The walls close in, the shadows whisper of conspiracy{!}*{Enter}
+ifEqual TheNumber, 15, Send, **Selfish** - *Self-preservation is paramount - at any cost{!}*{Enter}
+ifEqual TheNumber, 16, Send, **Courageous** - *A moment of valor shines brightest against a backdrop of despair.*{Enter}
+ifEqual TheNumber, 17, Send, **Focused** - *A moment of clarity in the eye of the storm..*{Enter}
+ifEqual TheNumber, 18, Send, **Powerful** - *Anger is power - unleash it{!}*{Enter}
+ifEqual TheNumber, 19, Send, **Stalwart** - *Many fall in the face of chaos; but not this one, not today.*{Enter}
+ifEqual TheNumber, 20, Send, **Vigorous** - *Adversity can foster hope, and resilience.*{Enter}
+Random, QuoterNewSeed, 1, 2147483647
+Random, , %QuoterNewSeed%
+Sleep, 1000
 return
